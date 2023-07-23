@@ -1,0 +1,49 @@
+footer{
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    padding: 50px 0;
+    .footer__nav{
+        display: flex;
+        border-bottom: 1px solid #d9d9d9;
+        .footer__menu{
+            flex-grow: 1;
+            h3{
+                @include font("black", 24px, -style, -height);
+                margin-bottom: 50px;
+                font-weight: 700;
+            }
+            p{
+                @include font($gray, 16px, -style, 24px);
+                margin-bottom: 50px;
+                max-width: 285px;
+            }
+            li{
+                @include font("black", 16px, -style, -height);
+                font-weight: 500;
+                margin-bottom: 46px;
+            }
+            .inpb{
+                display: flex;
+                gap: 11px;
+                input{
+                    @include font("s-grey", 14px, -style, -height);
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                }
+                button{
+                    @include font("balck", 14px, -style, -height);
+                    font-weight: 500;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid #000;
+                }
+
+            }
+        }
+    }
+    p{
+        @include font("black", 16px, -style, -height);
+        margin: 40px 0;
+    }
+}
